@@ -1,11 +1,11 @@
 'use client'
 
-import { experimental_useFormState as useFormState } from 'react-dom'
-import { useFormStatus } from 'react-dom'
+import { useFormState, useFormStatus } from 'react-dom'
 import { createTodo } from '@/app/actions'
 
 const initialState = {
-  message: null,
+  message: "inital state",
+  formData: null,
 }
 
 function SubmitButton() {

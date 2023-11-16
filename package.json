@@ -3,17 +3,21 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
-    "@types/node": "20.5.1",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
     "@vercel/postgres": "0.4.1",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.1.6",
+    "next": "^14.0.3-canary.9",
+    "react": "^18.3.0-canary-ee68446ff-20231115",
+    "react-dom": "^18.3.0-canary-ee68446ff-20231115",
     "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.7",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.2.2"
   }
 }
